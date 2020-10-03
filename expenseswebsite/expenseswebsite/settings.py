@@ -129,3 +129,12 @@ STATICFILES_DIRS=[os.path.join(BASE_DIR,'expenseswebsite/static')]
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
 
 django_heroku.settings(locals())
+
+#email settings 
+EMAIL_HOST='mail.essaycomptutors.com'
+EMAIL_PORT=465
+EMAIL_HOST_USER='info@essaycomptutors.com'
+EMAIL_HOST_PASSWORD='essay@2020'
+DEFAULT_FROM_RMAIL='info@essaycomptutors.com'
+EMAIL_USE_TSL=False
+EMAIL_USE_SSL=True
