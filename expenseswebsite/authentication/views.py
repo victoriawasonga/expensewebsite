@@ -72,7 +72,9 @@ class RegistrationView(View):
                 link=reverse('activate',kwargs={'uidb64':uidb64,'token':account_activation_token.make_token(user)})
                 activate_url='http://'+domain+link
                 email_subject="Activate your account"
-                email_body='Hi '+user.email+ ' Please use this link to verify your account\n'+activate_url  
+                email_body=
+                'Hi '+user.email+ 
+                ' Please use this link to verify your account\n'+activate_url  
                 email = EmailMessage(
                     email_subject,
                     email_body,

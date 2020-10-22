@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os  
-import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -128,7 +127,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'expenseswebsite/static')]
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
 
-django_heroku.settings(locals())
 
 #email settings 
 EMAIL_HOST='mail.essaycomptutors.com'
